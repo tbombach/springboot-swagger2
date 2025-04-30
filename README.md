@@ -2,10 +2,6 @@
 This project is a simple Spring Boot application that demonstrates how to use Swagger 2 for documenting a Spring REST API.
 Using the Springfox implementation of the Swagger 2 specification.
 
-> Note
-It’s important to mention that the latest version of Swagger specification, now known as OpenAPI 3.0, is better supported 
-by the Springdoc project and should be used for documenting Spring REST API. Moreover, Spring Boot 3 doesn’t support this library.
-
 # Prerequisites
 * Java Development Kit (JDK) 17
 * Apache Maven 3.6.3
