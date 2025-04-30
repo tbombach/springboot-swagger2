@@ -28,7 +28,7 @@ class EmployeeControllerTest {
 
     @Test
     void addEmployee() {
-        Employee employee = new Employee(5, "Jerry", "IT", 5000);
+        Employee employee = new Employee(5, "Jerry", "IT", 5000, 0);
 
     }
 }

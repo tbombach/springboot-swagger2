@@ -6,6 +6,8 @@ import com.spring.play.swagger2.service.EmployeeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import springfox.documentation.annotations.ApiIgnore;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,6 +28,7 @@ public class EmployeeController {
 
     @ApiOperation(value = "Add Employee", notes = "Add new employees to the list")
     @PostMapping("/addEmployee")
+    @ApiIgnore
     public ResponseEntity<?> addEmployee(@RequestBody Employee employee) {
         employeeService.addEmployee(employee);
         return new ResponseEntity<>("Employee added successfully", HttpStatus.CREATED);
